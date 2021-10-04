@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./calculadorastyles.css">
+    <title>Calculadora-dom</title>
+</head>
+<body>
+    
+  
+        <div class="resultado">
+            <p id="result">   </p>
+        </div>
+    
+
+    
+        <div class="teclas1">
+
+            <input type="button" class="AC" value="AC" onclick='resetear()'> 
+            <input type="button" class="return" value="↺" onclick='borrarPantalla()'> 
+            <input type="button" class="divis" value=/ onclick='calcular(this.value)'> 
+        </div>    
+    
+
+
+        <div class="teclas2">
+            <input type="button" class="siete" value=7 onclick='tomarValor(this.value)'> 
+            <input type="button" class="ocho" value=8 onclick='tomarValor(this.value)'> 
+            <input type="button" class="nueve" value=9 onclick='tomarValor(this.value)'> 
+            <input type="button" class="mult" value=* onclick='calcular(this.value)'> 
+
+        </div>
+  
+
+
+ 
+        <div class="teclas3">
+            <input type="button" class="cuatro" value=4 onclick='tomarValor(this.value)'> 
+            <input type="button" class="cinco" value=5 onclick='tomarValor(this.value)'> 
+            <input type="button" class="seis" value=6 onclick='tomarValor(this.value)'> 
+            <input type="button" class="menos" value="-" onclick='calcular(this.value)'> 
+        </div>
+
+
+    
+        <div class="teclas4">
+            <input type="button" class="uno" value=1 onclick='tomarValor(this.value)'> 
+            <input type="button" class="dos" value=2 onclick='tomarValor(this.value)'> 
+            <input type="button" class="tres" value=3 onclick='tomarValor(this.value)' > 
+            <input type="button" class="mas" value="+" onclick='calcular(this.value)'> 
+        </div>
+   
+
+   
+        <div class="teclas5">
+            <input type="button" class="cero" value=0 onclick='tomarValor(this.value)'> 
+            <input type="button" class="coma" value=. onclick='tomarValor(this.value)'> 
+            <input type="button" class="igual" value="=" onclick='igualA()'>  
+        </div>
+  
+        <script src="calculadora2.js"></script>
+    
+    
+
+</body>
+</html>
